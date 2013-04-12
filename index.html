@@ -1,26 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Sample "Hello, World" Application</title>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <style type="text/css">
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+      body {
+        padding-top: 40px; 
+      }
+      .container {
+        width: 300px;
+      }
+
+      /* The white background content wrapper */
+      .container > .content {
+        background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px; 
+        -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+                border-radius: 10px 10px 10px 10px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+    .login-form {
+    		margin-left: 65px;
+	  }
+	
+	  legend {
+		margin-right: -50px;
+		font-weight: bold;
+	  	color: #404040;
+	  }
+
+    </style>
   </head>
-  <body bgcolor=white>
+  <body>
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="login-form">
+          <h2>Login</h2>
+          <form action="">
+            <fieldset>
+              <div class="clearfix">
+                <input type="text" placeholder="Username">
+              </div>
+              <div class="clearfix">
+                <input type="password" placeholder="Password">
+              </div>
+              <button class="btn primary" type="submit">Sign in</button>
+            </fieldset>
+          </form>
+          <a href="dashboard.html">Hello</a>
+          <a href="pro.html">World</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->
 
-    <table border="0" cellpadding="10">
-      <tr>
-        <td>
-          <img src="images/springsource.png">
-        </td>
-        <td>
-          <h1>Sample "Hello, World" Application</h1>
-        </td>
-      </tr>
-    </table>
-
-    <p>This is the home page for the HelloWorld Web application. </p>
-    <p>To prove that they work, you can execute either of the following links:
-    <ul>
-      <li>To a <a href="hello.jsp">JSP page</a>.
-      <li>To a <a href="hello">servlet</a>.
-    </ul>
-
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
